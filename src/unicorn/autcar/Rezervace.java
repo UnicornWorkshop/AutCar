@@ -5,7 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;  
 import javax.persistence.ManyToOne;*/
 
-
+//@Entity
 public class Rezervace {
 	private Integer id;
 	private Klient klient;
