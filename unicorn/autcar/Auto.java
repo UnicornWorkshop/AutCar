@@ -81,5 +81,11 @@ public class Auto {
 		this.kapacita = kapacita;
 	}
 	
-	
+	public Set<Vybava> getVybava() {
+		return vybava;
+	}
+
+	public void setVybava(Set<Vybava> vybava) {
+		this.vybava = vybava;
+	}
 }
