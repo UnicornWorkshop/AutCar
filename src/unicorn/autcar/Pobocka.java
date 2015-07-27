@@ -6,11 +6,11 @@ import javax.persistence.Id;*/
 
 //@Entity
 public class Pobocka {
+	//@Id  
+    //@GeneratedValue
 	private Integer id;
 	private String mesto;
 	
-	//@Id  
-    //@GeneratedValue
 	public Integer getId() {
 		return id;
 	}

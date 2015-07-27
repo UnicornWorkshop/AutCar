@@ -8,13 +8,13 @@ import javax.persistence.ManyToMany;*/
 
 //@Entity
 public class Vybava {
+	//@Id  
+    //@GeneratedValue
 	private Integer id;
 	private String nazev;
 	//@ManyToMany
 	private Set<Auto> auto;
-	
-	//@Id  
-    //@GeneratedValue
+		
 	public Integer getId() {
 		return id;
 	}	
