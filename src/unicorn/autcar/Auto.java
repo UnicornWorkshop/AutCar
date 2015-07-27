@@ -1,19 +1,23 @@
 package unicorn.autcar;
 
 public class Auto {
+	//@Id @GeneratedValue
 	private Integer id;
 	private String znacka;
 	private Integer vykonnost;
 	private Integer velikost;
 	private Integer kapacita;
 	
-	public Auto(Integer id, String znacka, Integer vykonnost, Integer velikost, Integer kapacita) {
+	public Auto(String znacka, Integer vykonnost, Integer velikost, Integer kapacita) {
 		super();
-		this.id = id;
 		this.znacka = znacka;
 		this.vykonnost = vykonnost;
 		this.velikost = velikost;
 		this.kapacita = kapacita;
+	}
+
+	public Auto() {
+		super();
 	}
 
 	public Integer getId() {

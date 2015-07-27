@@ -1,17 +1,24 @@
 package unicorn.autcar;
 
+import javax.annotation.Generated;
+
 public class Kontakt {
+	//@Id @GeneratedValue
 	private Integer id;
-	private Integer id_klienta;
+	//@ManyToOne
+	private Klient klient;
 	private String data;
 	private String typ;
 	
-	public Kontakt(Integer id, Integer id_klienta, String data, String typ) {
+	public Kontakt(Klient klient, String data, String typ) {
 		super();
-		this.id = id;
-		this.id_klienta = id_klienta;
+		this.klient = klient;
 		this.data = data;
 		this.typ = typ;
+	}
+	
+	public Kontakt() {
+		super();
 	}
 
 	public Integer getId() {
@@ -22,12 +29,12 @@ public class Kontakt {
 		this.id = id;
 	}
 
-	public Integer getId_klienta() {
-		return id_klienta;
+	public Klient getKlient() {
+		return klient;
 	}
 
-	public void setId_klienta(Integer id_klienta) {
-		this.id_klienta = id_klienta;
+	public void setKlient(Klient klient) {
+		this.klient = klient;
 	}
 
 	public String getData() {
