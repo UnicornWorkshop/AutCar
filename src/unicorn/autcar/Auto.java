@@ -1,7 +1,16 @@
 package unicorn.autcar;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
 public class Auto {
-	//@Id @GeneratedValue
+	@Id 
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer id;
 	private String znacka;
 	private Integer vykonnost;
