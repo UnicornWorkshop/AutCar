@@ -2,11 +2,20 @@ package unicorn.autcar;
 
 import java.util.Set;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+
+@Entity
 public class Klient {
-	//@Id @GeneratedValue
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer id;
 	private String jmeno;
-	//@OneToMany(mappedBy="klient")
+	@OneToMany(mappedBy="klient")
 	private Set<Kontakt> kontakt;
 	
 	public Klient(String jmeno, Set<Kontakt> kontakt) {

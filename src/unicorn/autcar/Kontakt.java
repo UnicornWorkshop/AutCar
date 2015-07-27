@@ -1,11 +1,18 @@
 package unicorn.autcar;
 
 import javax.annotation.Generated;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
+@Entity
 public class Kontakt {
-	//@Id @GeneratedValue
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer id;
-	//@ManyToOne
+	@ManyToOne
 	private Klient klient;
 	private String data;
 	private String typ;
