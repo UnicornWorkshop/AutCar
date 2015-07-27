@@ -11,6 +11,15 @@ public class Pobocka {
 	private Integer id;
 	private String mesto;
 	
+	public Pobocka(){
+		
+	}
+	
+	public Pobocka(String mesto) {
+		super();
+		this.mesto = mesto;
+	}
+	
 	public Integer getId() {
 		return id;
 	}

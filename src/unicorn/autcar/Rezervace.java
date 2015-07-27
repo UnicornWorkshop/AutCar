@@ -25,6 +25,21 @@ public class Rezervace {
 	//@Temporal(TemporalType.DATE)
 	private Date datum_do;
 		
+	public Rezervace() {
+		
+	}
+	
+	public Rezervace(Klient klient, Auto auto, Pobocka pobocka_z, Pobocka pobocka_do, Date datum_od,
+			Date datum_do) {
+		super();
+		this.klient = klient;
+		this.auto = auto;
+		this.pobocka_z = pobocka_z;
+		this.pobocka_do = pobocka_do;
+		this.datum_od = datum_od;
+		this.datum_do = datum_do;
+	}
+	
 	public Integer getId() {
 		return id;
 	}

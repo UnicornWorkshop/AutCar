@@ -14,7 +14,17 @@ public class Vybava {
 	private String nazev;
 	//@ManyToMany
 	private Set<Auto> auto;
+	
+	public Vybava(){
 		
+	}
+	
+	public Vybava(String nazev, Set<Auto> auto) {
+		super();
+		this.nazev = nazev;
+		this.auto = auto;
+	}
+	
 	public Integer getId() {
 		return id;
 	}	
@@ -24,4 +34,10 @@ public class Vybava {
 	public void setNazev(String nazev) {
 		this.nazev = nazev;
 	}
+	public Set<Auto> getAuto() {
+		return auto;
+	}
+	public void setAuto(Set<Auto> auto) {
+		this.auto = auto;
+	}	
 }
