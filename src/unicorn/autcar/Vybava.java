@@ -1,18 +1,18 @@
 package unicorn.autcar;
 
 import java.util.Set;
-/*import javax.persistence.Entity;  
+import javax.persistence.Entity;  
 import javax.persistence.GeneratedValue;  
 import javax.persistence.Id;  
-import javax.persistence.ManyToMany;*/
+import javax.persistence.ManyToMany;
 
-//@Entity
+@Entity
 public class Vybava {
-	//@Id  
-    //@GeneratedValue
+	@Id  
+    @GeneratedValue
 	private Integer id;
 	private String nazev;
-	//@ManyToMany
+	@ManyToMany
 	private Set<Auto> auto;
 	
 	public Vybava(){

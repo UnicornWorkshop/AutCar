@@ -1,13 +1,13 @@
 package unicorn.autcar;
 
-/*import javax.persistence.Entity;  
+import javax.persistence.Entity;  
 import javax.persistence.GeneratedValue;  
-import javax.persistence.Id;*/
+import javax.persistence.Id;
 
-//@Entity
+@Entity
 public class Pobocka {
-	//@Id  
-    //@GeneratedValue
+	@Id  
+    @GeneratedValue
 	private Integer id;
 	private String mesto;
 	
