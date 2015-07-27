@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Kontakt {
@@ -17,11 +18,11 @@ public class Kontakt {
 	private String data;
 	private String typ;
 	
-	public Kontakt(Klient klient, String data, String typ) {
+	public Kontakt(Klient klient, TypyKontaktu typ, String data) {
 		super();
 		this.klient = klient;
+		this.typ = typ.toString();
 		this.data = data;
-		this.typ = typ;
 	}
 	
 	public Kontakt() {
@@ -56,8 +57,8 @@ public class Kontakt {
 		return typ;
 	}
 
-	public void setTyp(String typ) {
-		this.typ = typ;
+	public void setTyp(TypyKontaktu typ) {
+		this.typ = typ.toString();
 	}
 
 }
