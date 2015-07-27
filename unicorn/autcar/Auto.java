@@ -1,10 +1,14 @@
 package unicorn.autcar;
 
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -16,6 +20,10 @@ public class Auto {
 	private Integer vykonnost;
 	private Integer velikost;
 	private Integer kapacita;
+	@ManyToOne
+	private Pobocka pobocka;
+	@ManyToMany
+	private Set<Vybava> vybava;
 	
 	public Auto(String znacka, Integer vykonnost, Integer velikost, Integer kapacita) {
 		super();
@@ -32,9 +40,13 @@ public class Auto {
 	public Integer getId() {
 		return id;
 	}
+	
+	public Pobocka getPobocka() {
+		return pobocka;
+	}
 
-	public void setId(Integer id) {
-		this.id = id;
+	public void setPobocka(Pobocka pobocka) {
+		this.pobocka = pobocka;
 	}
 
 	public String getZnacka() {

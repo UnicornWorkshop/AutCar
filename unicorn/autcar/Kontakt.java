@@ -32,10 +32,6 @@ public class Kontakt {
 		return id;
 	}
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
-
 	public Klient getKlient() {
 		return klient;
 	}
