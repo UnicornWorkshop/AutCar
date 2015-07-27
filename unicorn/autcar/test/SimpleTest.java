@@ -18,7 +18,11 @@ public class SimpleTest {
 		Pobocka p = new Pobocka("Brno");
 		s.persist(p);
 		
-		//Auto a = new Auto();
+		Auto a = new Auto("Skoda", 200, 10000, 4);
+		a.setPobocka(p);
+		s.persist(a);
+		
+		Vybava v = new Vybava();
 		
 		t.commit();
 		s.close();

@@ -19,10 +19,9 @@ public class Vybava {
 		
 	}
 	
-	public Vybava(String nazev, Set<Auto> auto) {
+	public Vybava(String nazev) {
 		super();
 		this.nazev = nazev;
-		this.auto = auto;
 	}
 	
 	public Integer getId() {
