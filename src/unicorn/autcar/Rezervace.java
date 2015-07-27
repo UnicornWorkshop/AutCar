@@ -1,28 +1,29 @@
 package unicorn.autcar;
 
 import java.util.Date;
-/*import javax.persistence.Entity;  
+import javax.persistence.Entity;  
 import javax.persistence.GeneratedValue;  
 import javax.persistence.Id;  
 import javax.persistence.ManyToOne;
-import javax.persistence.Temporal;*/
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
-//@Entity
+@Entity
 public class Rezervace {
-	//@Id  
-    //@GeneratedValue
+	@Id  
+    @GeneratedValue
 	private Integer id;
-	//@ManyToOne
+	@ManyToOne
 	private Klient klient;
-	//@ManyToOne
+	@ManyToOne
 	private Auto auto;
-	//@ManyToOne
+	@ManyToOne
 	private Pobocka pobocka_z;
-	//@ManyToOne
+	@ManyToOne
 	private Pobocka pobocka_do;
-	//@Temporal(TemporalType.DATE)
+	@Temporal(TemporalType.DATE)
 	private Date datum_od;
-	//@Temporal(TemporalType.DATE)
+	@Temporal(TemporalType.DATE)
 	private Date datum_do;
 		
 	public Rezervace() {
