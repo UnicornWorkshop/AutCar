@@ -12,8 +12,8 @@ public class Vybava {
     @GeneratedValue
 	private Integer id;
 	private String nazev;
-	@ManyToMany
-	private Set<Auto> auto;
+	//@ManyToMany
+	//private Set<Auto> auto;
 	
 	public Vybava(){
 		
@@ -33,10 +33,10 @@ public class Vybava {
 	public void setNazev(String nazev) {
 		this.nazev = nazev;
 	}
-	public Set<Auto> getAuto() {
+	/*public Set<Auto> getAuto() {
 		return auto;
 	}
 	public void setAuto(Set<Auto> auto) {
 		this.auto = auto;
-	}	
+	}*/	
 }
