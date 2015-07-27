@@ -1,5 +1,8 @@
 package unicorn.autcar;
 
-public class Pobocka {
+//import javax.persistence.Entity;
 
+public class Pobocka {
+	Integer id;
+	String mesto;
 }
