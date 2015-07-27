@@ -15,13 +15,12 @@ public class Klient {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer id;
 	private String jmeno;
-	@OneToMany(mappedBy="klient")
-	private Set<Kontakt> kontakt;
+	//@OneToMany(mappedBy="klient")
+	//private Set<Kontakt> kontakt;
 	
-	public Klient(String jmeno, Set<Kontakt> kontakt) {
+	public Klient(String jmeno) {
 		super();
 		this.jmeno = jmeno;
-		this.kontakt = kontakt;
 	}
 	
 	public Klient() {
@@ -43,7 +42,7 @@ public class Klient {
 	public void setJmeno(String jmeno) {
 		this.jmeno = jmeno;
 	}
-	
+	/*
 	public Set<Kontakt> getKontakt() {
 		return kontakt;
 	}
@@ -51,4 +50,5 @@ public class Klient {
 	public void setKontakt(Set<Kontakt> kontakt) {
 		this.kontakt = kontakt;
 	}
+	*/
 }
